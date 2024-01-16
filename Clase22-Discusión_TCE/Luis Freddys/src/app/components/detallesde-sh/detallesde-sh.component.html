@@ -1,0 +1,102 @@
+<section style="background-color: #eee;">
+    <div class="container py-5">
+
+  
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card mb-4">
+            <div class="card-body text-center">
+              <img [src]="superHeroe.img" alt="avatar" class="rounded-circle img-fluid" style="width: 150px;">
+              <h5 class="my-3">{{superHeroe.nombre}}</h5>
+              <p class="text-muted mb-1">Editorial: {{superHeroe.editorial}}</p>
+              <p class="text-muted mb-4">Estado Actual del Super Heroe: {{superHeroe.estadodelsuperheroe}}</p>
+              <div class="d-flex justify-content-center mb-2">
+                <button type="button" class="btn btn-outline-primary ms-1" (click)="ModificarSH(superHeroe.id)">Modificar</button>
+                <!-- <button type="button" class="btn btn-outline-primary ms-1" (click)="EliminarSH(idElemento)" >Eliminar</button> -->
+              <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Eliminar
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Eliminar Super Heroe: {{superHeroe.nombre}}</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      Esta seguro que desea eleminar permanentemente este super heroe?
+      Esta accion no es reversible...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary" (click)="EliminarSH(idElemento)" data-bs-dismiss="modal">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-8">
+          <div class="card mb-4">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Alter Ego:</p>
+                </div>
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0"> {{superHeroe.alter_ego}}</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Publicado por:</p>
+                </div>
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0">{{superHeroe.primera_aparicion}}</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Caracter que representa:</p>
+                </div>
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0">{{superHeroe.characters}}</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Estado actual del comic:</p>
+                </div>
+                <div class="col-sm-9">
+                  @if(superHeroe.estadodelsuperheroe==1){
+                  <p class="text-muted mb-0">Activo</p>
+                }@else {
+                  <p class="text-muted mb-0">Inactivo</p>
+                }
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Address</p>
+                </div>
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0">Bay Area, San Francisco, CA</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>

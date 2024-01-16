@@ -1,0 +1,91 @@
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01" >
+      <a class="btn btn-outline-primary" routerLink="/adicionarSH">Nuevo Super Heroe</a>
+
+      <form class="d-flex" role="search" style="margin-left: 10%;">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search" [(ngModel)]="filtro">
+        <button class="btn btn-outline-primary" type="submit" >Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- <mat-progress-bar mode="determinate" value="40"></mat-progress-bar> -->
+
+<table class="table align-middle mb-0 bg-white">
+    <thead class="bg-light">
+      <tr>
+        <th>Nombre</th>
+        <th>Alter Ego</th>
+        <th>Estado</th>
+        <th>Primera Aparicion</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (item of ListadeSuperHeroes|filtroSH:filtro|paginate: { itemsPerPage: 5, currentPage: pagina }; track item; let indice = $index) {
+        <tr>
+          <td>
+            <div class="d-flex align-items-center">
+              @if (item.img=='') {
+                <img
+                src="./assets/desconocido.jpg"
+                alt=""
+                style="width: 45px; height: 45px"
+                class="rounded-circle"
+                />
+              }@else {
+                <img
+                [src]="item.img"
+                alt=""
+                style="width: 45px; height: 45px"
+                class="rounded-circle"
+                />
+              }
+             
+              <div class="ms-3">
+                <p class="fw-bold mb-1">{{item.nombre}}</p>
+                <p class="text-muted mb-0">{{item.editorial}}</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <p class="fw-normal mb-1">{{item.alter_ego}}</p>
+          </td>
+          <td>
+            @if(item.estadodelsuperheroe==1){
+            <span class="badge bg-success rounded-pill d-inline">
+             Activo</span>
+            }@else {
+              @if (item.estadodelsuperheroe==2) {<span class="badge bg-danger rounded-pill d-inline">
+                Inactivo</span>}
+                @else {<span class="badge bg-light rounded-pill d-inline">
+                  Desconocido</span>}
+              
+            }
+
+          </td>
+          <td>{{item.primera_aparicion}}</td>
+          <td>
+            <button type="button" class="btn btn-outline-primary" (click)="DetallesSH(item.id)" >
+              Detalles
+            </button>
+          </td>
+          
+        </tr>
+      }
+
+
+    </tbody>
+  </table>
+
+  <pagination-controls (pageChange)="pagina = $event" previousLabel="Anterior"
+  nextLabel="Siguiente"></pagination-controls>
+
+<ngx-ui-loader
+bgsColor="#ffcc48" text="Cargando..." pbColor="#b12bf7" fgsType="chasing-dots">
+</ngx-ui-loader>

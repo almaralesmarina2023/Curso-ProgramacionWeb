@@ -1,0 +1,109 @@
+{{sh.nombre}}
+<form  [formGroup]="formMod">
+<section style="background-color: #eee;">
+    <div class="container py-5">
+
+  
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card mb-4">
+            <div class="card-body text-center">
+              <img [src]="img.value" alt="avatar" class="rounded-circle img-fluid" style="width: 150px;">
+              <hr>
+              <div class="d-flex justify-content-center mb-2">
+                <button type="button" class="btn btn-outline-primary ms-1" (click)="ModificarSH()" [disabled]="formMod.invalid">Modificar</button>
+                <button type="button" class="btn btn-outline-primary ms-1" (click)="VolverListado()">Cancelar</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-8">
+          <div class="card mb-4">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-3">
+                      <p class="mb-0">Nombre:</p>
+                    </div>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" formControlName="nombre" id="nombre"
+                          name="nombre" >
+                        <div class="alert alert-danger mt-2" [hidden]="nombre.valid||nombre.pristine">
+                          El nombre en obligatorio
+                        </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <p class="mb-0">Editorial:</p>
+                    </div>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="edit" formControlName="editorial" placeholder="Editorial" name="edit">
+                        <div class="alert alert-danger mt-2" [hidden]="editorial.valid||editorial.pristine">
+                          El nombre de la editorial es obligatorio
+                        </div>
+                    </div>
+                  </div>
+                  <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Alter Ego:</p>
+                </div>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="ae" formControlName="alter_ego" placeholder="Alter Ego" name="ae">
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Primera Publicacion:</p>
+                </div>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="pa" formControlName="primera_aparicion" placeholder="Primera aparicion" name="pa">
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Caracter que representa:</p>
+                </div>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="c" formControlName="characters" placeholder="Caracter que representa" name="c">
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Estado actual del comic:</p>
+                </div>
+                <div class="col-sm-9">
+              
+                    <select class="form-select" aria-label="Default select example" formControlName="estadodelsuperheroe">
+                        <option value='1'>Activo</option>
+                        <option value='2'>Inactivo</option>
+                        <option value='3'>Desconocido</option>
+                      </select>
+                
+                </div>
+              </div>
+              
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Cambiar Avatar</p>
+                </div>
+                <div class="col-sm-9">
+              
+                    <input type="file" class="form-control" (change)="capturarfile($event)" id="customFile" formControlName="img"/>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+</form>
