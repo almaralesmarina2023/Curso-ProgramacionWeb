@@ -1,0 +1,55 @@
+<div class="container" style="margin-top: 20 px;">
+    <br><h1><strong>{{cuadroNombre}}</strong></h1>
+    <div class="row">
+        <div class="col-md-4">
+            <h2><strong>Nombre de nacimiento: </strong></h2>
+            <p>{{cuadroNombreNacimiento}}</p>
+            <h2><strong>Creador por: </strong></h2>
+            <p>{{cuadroCreador}}</p>
+        </div>
+        <div class="col-md-4">
+            <h2><strong>Primera aparición: </strong></h2>
+            <p>{{cuadroPrimeraAparicion | date: 'y'}}</p>
+            <h2><strong>Sexo: </strong></h2>
+            <p>{{cuadroSexo}}</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <img src={{cuadroImagen}} alt="" height="250 em" style="border-radius: 10px;">
+        </div>
+
+        <div class="col-md-3">
+            <h2><strong>Habilidades: </strong>Habilidades</h2>
+                <li *ngFor="let hab of cuadroHabilidades" style="margin-top: 40 px;">{{hab}}</li>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <h2><strong>Aliados: </strong></h2>
+                <li *ngFor="let al of cuadroAliados" style="margin-top: 40 px;">{{al}}</li>
+        </div>
+
+        <div class="col-md-4">
+            <h2><strong>Enemigos: </strong></h2>
+                <li *ngFor="let en of cuadroEnemigos" style="margin-top: 40 px;">{{en}}</li>
+        </div>
+    </div><br><br>
+
+<div style="text-align: center;">
+    <div class="row">
+        <div class="col-md-2">
+            <button class="btn btn-outline-light" (click)="volverListar()">Atrás</button>
+        </div>
+        <div class="col-md-2">
+             <button class="btn btn-outline-light" (click)="Editar()">Editar</button>
+        </div>
+    </div>
+    
+   
+    
+</div>
+
+</div>

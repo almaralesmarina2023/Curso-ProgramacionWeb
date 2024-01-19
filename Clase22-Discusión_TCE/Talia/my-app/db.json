@@ -1,0 +1,132 @@
+{
+  "Heroes": [
+    {
+      "id": 0,
+      "nombre": "Hulk",
+      "nombre_nacimiento": "Robert Bruce Banner",
+      "p_aparicion": "1962-5-10",
+      "creador": "Stan Lee y Jack Kirby",
+      "sexo": "Masculino",
+      "especialidad": [
+        "Súper fuerza; esta conlleva por defecto: súper velocidad",
+        "Súper resistencia",
+        "Súper salto",
+        "Invulnerabilidad",
+        "Regeneración",
+        "Longevidad",
+        "Factor de curación acelerado",
+        "Capacidad de respirar bajo el agua, respirar en el espacio y ver fantasmas y otras entidades astrales"
+      ],
+      "aliados": [
+        "Iron Man",
+        "Capitán América",
+        "Viuda Negra",
+        "Thor"
+      ],
+      "enemigos": [
+        "Abominación",
+        "Hombre Absorbente",
+        "Zzzax",
+        "Thunderbolt Ross",
+        "Glenn Talbot"
+      ],
+      "imagen": "./assets/hulk.jpg"
+    },
+    {
+      "nombre": "Iron-Man",
+      "nombre_nacimiento": "Anthony Edward Stark",
+      "p_aparicion": "1963-03-01",
+      "creador": "Stan Lee",
+      "sexo": "Masculino",
+      "especialidad": [
+        "Vuelo supersónico.",
+        "Propulsores de energía y misiles de proyección.",
+        "Uso de equipamiento, dispositivos y armamento de alta tecnología."
+      ],
+      "aliados": [
+        "Máquina de Guerra",
+        "Pepper Potts",
+        "Happy Hogan"
+      ],
+      "enemigos": [
+        "El Mandarín",
+        "Tranficante de Hierro",
+        "Whinplash"
+      ],
+      "imagen": "./assets/ironman.jpg",
+      "id": 4
+    },
+    {
+      "nombre": "Black Widow (II)",
+      "nombre_nacimiento": "Natasha Romanova",
+      "p_aparicion": "1964-04-01",
+      "creador": "Stan Lee, Don Rico y Don Heck",
+      "sexo": "Femenino",
+      "especialidad": [
+        "Envejecimiento lento",
+        "Sistema inmunológico mejorado",
+        "Hipnosis"
+      ],
+      "aliados": [
+        "Capitán América",
+        "Hulk",
+        "Hawkeye"
+      ],
+      "enemigos": [
+        "Black Lotus",
+        "Yelena Belova",
+        "Rose"
+      ],
+      "imagen": "./assets/black.jpg",
+      "id": 5
+    },
+    {
+      "nombre": "Thor",
+      "nombre_nacimiento": "Thor Odinson",
+      "p_aparicion": "1962-08-01",
+      "creador": "Stan Lee, Larry Lieber y Jack Kirby",
+      "sexo": "Masculino",
+      "especialidad": [
+        "Fuerza sobrehumana, resistencia, durabilidad, velocidad, agilidad, reflejos, curación, longevidad y sentidos.",
+        "Manipulación del clima, la materia y la energía.",
+        "Habilidades a través de Mjolnir:  viaje dimensional y vuelo"
+      ],
+      "aliados": [
+        "Sif",
+        "Loki",
+        "Heimdall"
+      ],
+      "enemigos": [
+        "Laufey",
+        "Malekith el Maldito",
+        "La Mano"
+      ],
+      "imagen": "./assets/thor.jpg",
+      "id": 6
+    },
+    {
+      "nombre": "Capitán América",
+      "nombre_nacimiento": "Steven Grant Rogers",
+      "p_aparicion": "1899-12-30",
+      "creador": "Joe Simon y Jack Kirby",
+      "sexo": "Masculino",
+      "especialidad": [
+        "Sentidos, agilidad, velocidad y fuerza sobrehumanas.",
+        "Instinto de liderazgo, gran resistencia, inmune a gases y enfermedades, curación y regeneración acelerada.",
+        "Genio táctico, artista marcial, acróbata experto."
+      ],
+      "aliados": [
+        "Iron-Man",
+        "Black Widow",
+        "Bucky Barnes"
+      ],
+      "enemigos": [
+        "Cráneo rojo",
+        "HYDRA",
+        "Barón Sangre"
+      ],
+      "imagen": "./assets/america.jpg",
+      "id": 7
+    }
+  ]
+}
