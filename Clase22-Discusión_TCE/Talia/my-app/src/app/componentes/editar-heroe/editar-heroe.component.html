@@ -1,0 +1,88 @@
+<div class="container mt-3" style="text-align: center;">
+    <h2>Datos del Súperhéroe</h2>
+    <form [formGroup]="formUser">
+    <div class="container mt-3">
+        <div class="input-group mb-3 input-group-lg">
+            <input type="text" formControlName="nombre" class="form-control" placeholder="Nombre de pila...">
+        </div>
+    </div>
+    <div class="container mt-3">
+        <div class="input-group mb-3 input-group-lg">
+            <input type="text" formControlName="nombre_real" class="form-control" placeholder="Nombre de nacimiento...">
+        </div>
+    </div>
+    <div class="container mt-3">
+        <div class="input-group mb-3 input-group-lg">
+            <input type="datetime" formControlName="fecha_p" class="form-control" placeholder="Primera aparición...">
+        </div>
+    </div>
+    <div class="container mt-3">
+        <div class="input-group mb-3 input-group-lg">
+            <input type="text" formControlName="creador" class="form-control" placeholder="Creador por...">
+        </div>
+    </div>
+    <div class="container mt-3">
+        <div class="input-group mb-3 input-group-lg">
+            <input type="text" formControlName="sexo" class="form-control" style="margin-top: 0.3em;" placeholder="Sexo...">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+    <div class="container mt-3">
+        <h2>Habilidades</h2>
+    <div class="input-group mb-3 input-group-lg">
+        <input type="text" formControlName="hab1" class="form-control" style="margin-top: 0.3em;" placeholder="Habilidad 1...">
+    </div>
+    <div class="input-group mb-3 input-group-lg">
+        <input type="text" formControlName="hab2" class="form-control" style="margin-top: 0.3em;" placeholder="Habilidad 2...">
+    </div>
+    <div class="input-group mb-3 input-group-lg">
+        <input type="text"  formControlName="hab3" class="form-control" style="margin-top: 0.3em;" placeholder="Habilidad 3...">
+    </div>
+    </div>
+</div>
+    
+    <div class="col-md-4">
+    <div class="container mt-3">
+        <h2>Aliados</h2>
+    <div class="input-group mb-3 input-group-lg">
+        <input type="text" formControlName="al1" class="form-control" style="margin-top: 0.3em;" placeholder="Aliado 1...">
+    </div>
+    <div class="input-group mb-3 input-group-lg">
+        <input type="text" formControlName="al2" class="form-control" style="margin-top: 0.3em;" placeholder="Aliado 2...">
+    </div>
+    <div class="input-group mb-3 input-group-lg">
+        <input type="text"  formControlName="al3" class="form-control" style="margin-top: 0.3em;" placeholder="Aliado 3...">
+    </div>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="container mt-3">
+        <h2>Enemigos</h2>
+    <div class="input-group mb-3 input-group-lg">
+        <input type="text" formControlName="en1" class="form-control" style="margin-top: 0.3em;" placeholder="Enemigo 1...">
+    </div>
+    <div class="input-group mb-3 input-group-lg">
+        <input type="text" formControlName="en2" class="form-control" style="margin-top: 0.3em;" placeholder="Enemigo 2...">
+    </div>
+    <div class="input-group mb-3 input-group-lg">
+        <input type="text" formControlName="en3" class="form-control" style="margin-top: 0.3em;" placeholder="Enemigo 3...">
+    </div>
+    </div>
+</div>
+</div>
+    
+    <div class="container mt-3">
+        <div class="input-group mb-3 input-group-lg">
+            <input type="text" formControlName="imagen" class="form-control" style="margin-top: 0.3em;" placeholder="Ruta de imagen">
+        </div>
+    </div>
+
+    <div style="text-align: center;">
+        <button class="btn btn-outline-light" [disabled]="formUser.invalid" (click)="modificarHeroe()">Guardar cambios</button>
+    </div><br>
+
+    <div style="text-align: center;">
+        <button class="btn btn-outline-light" (click)="volverListar()">Volver</button>
+    </div>
+    </form>

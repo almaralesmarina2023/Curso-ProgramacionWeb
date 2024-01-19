@@ -1,0 +1,17 @@
+<div class="container">
+  <ul class="nav nav-tabs bg-dark" style="color: beige; text-decoration: none;">
+    <li class="nav-item">
+      <a class="nav-link" routerLink="" style="color: beige;">Inicio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="heroes" style="color: beige;">Listado de Héroes</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="q" style="color: beige;">Preguntas frecuentes</a>
+    </li>
+  </ul>
+</div>
+
+<ngx-ui-loader [loaderId]="'loader'"></ngx-ui-loader>
+
+<router-outlet></router-outlet>

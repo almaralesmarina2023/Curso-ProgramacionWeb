@@ -1,0 +1,19 @@
+<div class="container" style="display: flex; flex-direction: column; min-height: 100vh;">
+<h2 style="margin-top:2px;"><strong>Héroes del UCM (Universo Cinematográfico de Marvel)</strong></h2>
+<input type="text" name="cuadroFiltro" class="form-control" placeholder="Buscar..." [(ngModel)]="filtro" >
+  
+<div class="row" style="margin-top:5px;">
+        <div class="col-md-3" *ngFor='let h of hero | filtrarNombre: filtro | slice:Inicio:Fin , let i = index' >
+            <app-heroe [indice]="h.id" [heroe]="h" (eliminar)="eliminarElemento($event)"></app-heroe>
+        </div>
+</div>
+
+<div style="text-align: center;">
+    <br><button class="btn btn-outline-light" (click)="irAgregar()">Añadir héroe</button>
+</div>
+
+<mat-paginator [length]="hero.length"
+              [pageSize]="elementosPorPagina"
+              (page)="cambiarPagina($event)">
+</mat-paginator>
+</div>
