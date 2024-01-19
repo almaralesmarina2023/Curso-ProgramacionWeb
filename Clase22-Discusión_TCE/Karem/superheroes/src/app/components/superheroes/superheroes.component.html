@@ -1,0 +1,13 @@
+<a [routerLink]="['/detalles',indice]" class="list-group-item" style="cursor: pointer; ">
+    <ol class="list-group ">
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                {{Superheroe.id}}
+                <img [src]="Superheroe.imagen " class="img-responsive" style="max-height: 50px;"
+                     [alt]="Superheroe.superheroe">
+                {{Superheroe.superheroe}}. {{Superheroe.editor}}. {{Superheroe.tematica}}
+            </div>
+            <button mat-raised-button color="primary" [routerLink]="['/detalles', indice]">Ver detalles</button>
+        </li>
+    </ol>
+</a>

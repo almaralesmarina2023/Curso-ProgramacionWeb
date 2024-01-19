@@ -1,0 +1,100 @@
+<div class="container-fluid py-2">
+  <div class="container pt-5">
+    <div class="row">
+      @for (superh of sh; track superh ; let i=$index) {
+      <div class="col-lg-6" style="min-height: 500px;">
+        <div class="position-relative h-100">
+
+          <img class="position-absolute w-100 h-100" [src]="superh.imagen" style="object-fit: cover;">
+        </div>
+      </div>
+      <div class="col-lg-6 pt-5 pb-lg-5">
+        <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Super Heroe</th>
+                <th scope="col">Actor principal</th>
+                <th scope="col">Editor</th>
+                <th scope="col">Temática</th>
+                <th scope="col">Personajes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">{{superh.superheroe}}</th>
+                <td>{{superh.actor_principal}}</td>
+                <td>{{superh.editor}}</td>
+                <td>{{superh.tematica}}</td>
+                <td>{{superh.personajes}}</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="row mb-4">
+            <div class="col-6">
+            </div>
+            <table class="table" style="align-content: center;">
+              <tbody>
+                <tr>
+                  <td><button mat-flat-button color="primary" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal1">Modificar</button>
+                    <button mat-flat-button color="warn" (click)="confirEliminar()">Eliminar</button>
+                  </td>
+
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+      }
+    </div>
+  </div>
+</div>
+<!-- ================================================================================================ -->
+
+<!-- =====================================================MODEL=========================================================== -->
+
+
+<!-- Modal Eliminar
+data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Confirmaión</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h3>Está seguro que desea eliminar al SuperHeroe:</h3>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <div class="example-button-container">
+          <button mat-flat-button color="warn">Eliminar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Modificar-->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modificar SuperHeroe</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        @for (superh of sh; track superh ; let i=$index) {
+        <app-modificarsh [Superheroe]="superh" [indice]="i" (newItemEvent)="addItem($event)"></app-modificarsh>
+        }
+      </div>
+    </div>
+  </div>
+</div>
