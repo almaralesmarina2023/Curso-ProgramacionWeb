@@ -1,0 +1,33 @@
+.principal{
+
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0, 0, 0, 0.619)),url(fx1.jpg);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+}
+.formulario{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.caracteristicas{
+  height: 300px;
+}
+.botones{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.btn{
+  margin: 10px;
+  background-color: whitesmoke;
+}
+.btn:hover{
+  background-color: #212529;
+  color: whitesmoke;
+
+}

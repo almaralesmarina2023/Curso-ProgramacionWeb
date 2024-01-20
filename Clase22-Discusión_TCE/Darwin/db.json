@@ -1,0 +1,76 @@
+{
+  "heroes": [
+    {
+      "id": "1",
+      "superhero": "Spider Man",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Peter Parker",
+      "first_appearance": "Amazing Fantasy #15",
+      "characters": "With supporting text below as Lorem ipsum dolor, sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, temporibus. Sequi repellat maxime fuga quo quam aut iure laborum quas, quos unde in, impedit est veniam libero, amet necessitatibus praesentium? adipisicing elit. Iusto, consectetur! Perspiciatis sit voluptates officia omnis, ab, sapiente, unde temporibus ut ratione ipsam adipisci eaque dolorem animi velit! Dolor, dolorum rerum. a natural lead-in to additional content.",
+      "imagen": "./assets/spiderman.jpg"
+    },
+    {
+      "id": "2",
+      "superhero": "Captain America",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Steve Rogers",
+      "first_appearance": "Captain America Comics #1",
+      "characters": "With supporting text below as Lorem ipsum dolor, sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, temporibus. Sequi repellat maxime fuga quo quam aut iure laborum quas, quos unde in, impedit est veniam libero, amet necessitatibus praesentium? adipisicing elit. Iusto, consectetur! Perspiciatis sit voluptates officia omnis, ab, sapiente, unde temporibus ut ratione ipsam adipisci eaque dolorem animi velit! Dolor, dolorum rerum. a natural lead-in to additional content.",
+      "imagen": "./assets/capi.jpg"
+    },
+    {
+      "id": "3",
+      "superhero": "Iron Man",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Tony Stark",
+      "first_appearance": "Tales of Suspense #39",
+      "characters": "With supporting text below as Lorem ipsum dolor, sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, temporibus. Sequi repellat maxime fuga quo quam aut iure laborum quas, quos unde in, impedit est veniam libero, amet necessitatibus praesentium? adipisicing elit. Iusto, consectetur! Perspiciatis sit voluptates officia omnis, ab, sapiente, unde temporibus ut ratione ipsam adipisci eaque dolorem animi velit! Dolor, dolorum rerum. a natural lead-in to additional content.",
+      "imagen": "./assets/ironman.jpg"
+    },
+    {
+      "id": "4",
+      "superhero": "Thor",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Thor Odinson",
+      "first_appearance": "Journey into Myster #83",
+      "characters": "With supporting text below as Lorem ipsum dolor, sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, temporibus. Sequi repellat maxime fuga quo quam aut iure laborum quas, quos unde in, impedit est veniam libero, amet necessitatibus praesentium? adipisicing elit. Iusto, consectetur! Perspiciatis sit voluptates officia omnis, ab, sapiente, unde temporibus ut ratione ipsam adipisci eaque dolorem animi velit! Dolor, dolorum rerum. a natural lead-in to additional content.",
+      "imagen": "./assets/thor.jpg"
+    },
+    {
+      "id": "5",
+      "superhero": "Hulk",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Bruce Banner",
+      "first_appearance": "The Incredible Hulk #1",
+      "characters": "With supporting text below as Lorem ipsum dolor, sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, temporibus. Sequi repellat maxime fuga quo quam aut iure laborum quas, quos unde in, impedit est veniam libero, amet necessitatibus praesentium? adipisicing elit. Iusto, consectetur! Perspiciatis sit voluptates officia omnis, ab, sapiente, unde temporibus ut ratione ipsam adipisci eaque dolorem animi velit! Dolor, dolorum rerum. a natural lead-in to additional content.",
+      "imagen": "./assets/hulk.jpg"
+    },
+    {
+      "id": "6",
+      "superhero": "Hawkeye",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Clinton Francis Barton",
+      "first_appearance": "Tales of Suspense #57",
+      "characters": "With supporting text below as Lorem ipsum dolor, sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, temporibus. Sequi repellat maxime fuga quo quam aut iure laborum quas, quos unde in, impedit est veniam libero, amet necessitatibus praesentium? adipisicing elit. Iusto, consectetur! Perspiciatis sit voluptates officia omnis, ab, sapiente, unde temporibus ut ratione ipsam adipisci eaque dolorem animi velit! Dolor, dolorum rerum. a natural lead-in to additional content.",
+      "imagen": "./assets/hawkeye.jpg"
+    },
+    {
+      "id": "7",
+      "superhero": "Wanda",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Norrin Radd",
+      "first_appearance": "The Fantastic Four #48",
+      "characters": "With supporting text below as Lorem ipsum dolor, sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, temporibus. Sequi repellat maxime fuga quo quam aut iure laborum quas, quos unde in, impedit est veniam libero, amet necessitatibus praesentium? adipisicing elit. Iusto, consectetur! Perspiciatis sit voluptates officia omnis, ab, sapiente, unde temporibus ut ratione ipsam adipisci eaque dolorem animi velit! Dolor, dolorum rerum. a natural lead-in to additional content.",
+      "imagen": "./assets/wanda.webp"
+    },
+    {
+      "id": "8",
+      "superhero": "Viuda Negra",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Romanoff",
+      "first_appearance": "The Fantastic Four #48",
+      "characters": "With supporting text below as Lorem ipsum dolor, sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, temporibus. Sequi repellat maxime fuga quo quam aut iure laborum quas, quos unde in, impedit est veniam libero, amet necessitatibus praesentium? adipisicing elit. Iusto, consectetur! Perspiciatis sit voluptates officia omnis, ab, sapiente, unde temporibus ut ratione ipsam adipisci eaque dolorem animi velit! Dolor, dolorum rerum. a natural lead-in to additional content.",
+      "imagen": "./assets/viuda.webp"
+    }
+  ]
+}
